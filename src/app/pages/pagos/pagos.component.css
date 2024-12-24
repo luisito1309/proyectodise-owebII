@@ -1,0 +1,103 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #673ab7;
+  color: #fff;
+  padding: 20px 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Sección de QR */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #673ab7;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.qr-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.qr-container img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #673ab7;
+  border-radius: 8px;
+}
+
+/* Sección de WhatsApp */
+ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  list-style-type: decimal;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1da851;
+  transform: scale(1.05);
+}
+
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}

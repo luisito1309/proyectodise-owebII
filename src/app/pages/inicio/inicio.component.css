@@ -1,0 +1,173 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('http://unsplash.it/1200x800') center center no-repeat;
+  background-size: cover;
+}
+
+.bg-img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+  opacity: 0.6;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+  margin-bottom: 30px;
+}
+
+/* Carrusel */
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Contenedor de tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Espacio entre tarjetas */
+}
+
+/* Estilos de las tarjetas */
+.card {
+  margin: 5; /* Resetea el margen interno de las tarjetas */
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  border: 2px solid #f06d6d;
+  background-color: #f9f9f9;
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+  color: #f06d6d;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ffdada;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Sección de Contacto */
+#contacto {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  position: relative; /* Añadir z-index al contenedor */
+  z-index: 1;
+}
+
+#contacto .form-label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#contacto .form-control {
+  padding: 10px;
+  border: 1px solid #f7f3f3;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* Fondo blanco para los campos de texto */
+  color: #333; /* Color del texto */
+  z-index: 2; /* Asegurarse de que los campos de entrada estén sobre otros elementos */
+  position: relative;
+}
+
+#contacto .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff; /* Fondo blanco en el foco */
+}
+
+/* Estilo para el botón de envío */
+#contacto .btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#contacto .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  #contacto {
+    padding: 30px;
+  }
+}

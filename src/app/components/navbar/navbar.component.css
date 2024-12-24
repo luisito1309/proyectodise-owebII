@@ -1,0 +1,15 @@
+/* Estilos adicionales para personalizar el navbar */
+.navbar {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5wfXsiaEY0Eq2pRNfSugzrCGA-Mv3IvabHA&s');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
